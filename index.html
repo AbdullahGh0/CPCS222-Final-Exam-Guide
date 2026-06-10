@@ -6,7 +6,7 @@
 <title>CPCS222 — Final Exam Master Guide</title>
 <style>
   @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
-
+ 
   :root {
     --bg: #0d0f14;
     --surface: #141720;
@@ -25,9 +25,9 @@
     --mono: 'IBM Plex Mono', monospace;
     --sans: 'IBM Plex Sans', sans-serif;
   }
-
+ 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
+ 
   body {
     background: var(--bg);
     color: var(--text);
@@ -35,7 +35,7 @@
     font-size: 15px;
     line-height: 1.7;
   }
-
+ 
   /* ── HEADER ── */
   header {
     background: linear-gradient(135deg, #0a0e1a 0%, #111827 100%);
@@ -96,10 +96,10 @@
     color: var(--accent);
     background: rgba(79,142,247,0.06);
   }
-
+ 
   /* ── LAYOUT ── */
   .container { max-width: 1100px; margin: 0 auto; padding: 0 32px 80px; }
-
+ 
   /* ── ALERT BOX ── */
   .alert {
     margin: 32px 0;
@@ -116,7 +116,7 @@
   .alert.info strong { color: var(--accent); }
   .alert.tip { border-color: var(--accent3); }
   .alert.tip strong { color: var(--accent3); }
-
+ 
   /* ── SECTION CARD ── */
   .day-section {
     margin-bottom: 48px;
@@ -166,10 +166,10 @@
   .badge-practice { color: var(--warn); border-color: var(--warn); }
   .chevron { color: var(--text-muted); font-size: 18px; transition: transform 0.3s; }
   .day-header.collapsed .chevron { transform: rotate(-90deg); }
-
+ 
   .day-body { padding: 28px; display: block; }
   .day-body.hidden { display: none; }
-
+ 
   /* ── PREREQUISITE BOX ── */
   .prereq-box {
     background: rgba(167,139,250,0.06);
@@ -180,11 +180,11 @@
   }
   .prereq-box h4 { color: var(--accent2); font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 10px; }
   .prereq-box p { color: var(--text-dim); font-size: 14px; }
-
+ 
   /* ── GRID ── */
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
   @media(max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
-
+ 
   /* ── CARD ── */
   .card {
     background: var(--surface2);
@@ -204,7 +204,7 @@
   .card h4.warn { color: var(--warn); }
   .card h4.green { color: var(--accent3); }
   .card h4.pink { color: var(--accent5); }
-
+ 
   /* ── LIST ── */
   ul.clean { list-style: none; }
   ul.clean li {
@@ -220,7 +220,7 @@
   ul.clean li::before { content: '→'; color: var(--accent); font-family: var(--mono); flex-shrink: 0; }
   ul.clean li.danger::before { color: var(--danger); content: '⚠'; }
   ul.clean li.green::before { color: var(--accent3); content: '✓'; }
-
+ 
   /* ── FORMULA BLOCK ── */
   .formula-block {
     background: #0a0d14;
@@ -244,7 +244,7 @@
   .formula-block .highlight {
     color: var(--warn);
   }
-
+ 
   /* ── TABLE ── */
   table {
     width: 100%;
@@ -273,13 +273,13 @@
   tr:hover td { background: rgba(255,255,255,0.015); }
   td.mono { font-family: var(--mono); font-size: 12px; color: var(--accent3); }
   td strong { color: var(--text); }
-
+ 
   /* ── SCHEDULE TABLE ── */
   .schedule-table th { background: #111827; }
   .schedule-table td.day-label { color: var(--accent); font-family: var(--mono); font-size: 12px; font-weight: 600; }
   .schedule-table td.topic { color: var(--text); font-weight: 500; }
   .schedule-table td.goal { font-size: 12px; }
-
+ 
   /* ── STEPS ── */
   .steps { counter-reset: step; }
   .step {
@@ -304,7 +304,7 @@
   .step-body { flex: 1; }
   .step-body strong { color: var(--text); display: block; margin-bottom: 3px; font-size: 14px; }
   .step-body p { color: var(--text-dim); font-size: 13px; }
-
+ 
   /* ── SECTION TITLE ── */
   .section-title {
     font-size: 13px;
@@ -317,7 +317,7 @@
     padding-bottom: 8px;
     border-bottom: 1px solid var(--border);
   }
-
+ 
   /* ── TRAP BOX ── */
   .trap-box {
     background: rgba(248,113,113,0.05);
@@ -330,7 +330,7 @@
     line-height: 1.6;
   }
   .trap-box strong { color: var(--danger); }
-
+ 
   /* ── PROOF BLOCK ── */
   .proof-block {
     background: #080b10;
@@ -349,7 +349,7 @@
     font-size: 11px;
     margin-left: 12px;
   }
-
+ 
   /* ── TABS ── */
   .tabs { display: flex; gap: 4px; margin-bottom: 16px; flex-wrap: wrap; }
   .tab-btn {
@@ -371,7 +371,7 @@
   }
   .tab-panel { display: none; }
   .tab-panel.active { display: block; }
-
+ 
   /* ── PROGRESS ── */
   .progress-row {
     display: flex;
@@ -382,7 +382,7 @@
   .progress-label { font-size: 13px; color: var(--text-dim); min-width: 160px; }
   .progress-bar-wrap { flex: 1; background: var(--surface2); border-radius: 4px; height: 6px; }
   .progress-bar { height: 6px; border-radius: 4px; }
-
+ 
   /* ── FOOTER ── */
   .site-footer {
     border-top: 1px solid var(--border);
@@ -393,7 +393,7 @@
     text-align: center;
     letter-spacing: 1px;
   }
-
+ 
   /* ── SCHEDULE OVERVIEW ── */
   .schedule-grid {
     display: grid;
@@ -417,7 +417,7 @@
   .sched-day { font-family: var(--mono); font-size: 10px; color: var(--accent); letter-spacing: 2px; margin-bottom: 6px; }
   .sched-topic { font-size: 12px; font-weight: 600; color: var(--text); line-height: 1.3; }
   .sched-time { font-size: 11px; color: var(--text-muted); margin-top: 6px; }
-
+ 
   .big-tip {
     background: rgba(52,211,153,0.06);
     border: 1px solid rgba(52,211,153,0.2);
@@ -428,18 +428,91 @@
     color: var(--text-dim);
   }
   .big-tip h4 { color: var(--accent3); font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
-
+ 
   code { font-family: var(--mono); font-size: 12px; color: var(--accent3); background: rgba(52,211,153,0.08); padding: 1px 6px; border-radius: 4px; }
-
+ 
   details { margin: 8px 0; }
   summary { cursor: pointer; color: var(--accent); font-size: 13px; padding: 4px 0; list-style: none; }
   summary::before { content: '▶ '; font-size: 10px; }
   details[open] summary::before { content: '▼ '; }
   details .detail-body { padding: 10px 0 4px 12px; color: var(--text-dim); font-size: 13px; }
+ 
+  /* ── CHECKBOX ── */
+  .done-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    margin-left: 4px;
+    flex-shrink: 0;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .done-checkbox input[type="checkbox"] { display: none; }
+  .done-box {
+    width: 22px; height: 22px;
+    border-radius: 6px;
+    border: 2px solid var(--text-muted);
+    background: transparent;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+  .done-checkbox:hover .done-box { border-color: var(--accent3); }
+  .done-box .check-icon { display: none; font-size: 13px; line-height: 1; }
+  .done-checkbox input:checked ~ .done-box {
+    background: var(--accent3);
+    border-color: var(--accent3);
+  }
+  .done-checkbox input:checked ~ .done-box .check-icon { display: block; }
+  .done-label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    transition: color 0.2s;
+    white-space: nowrap;
+  }
+  .done-checkbox:hover .done-label { color: var(--accent3); }
+  .done-checkbox input:checked ~ .done-box + .done-label,
+  .done-checkbox input:checked + .done-box + .done-label { color: var(--accent3); }
+ 
+  /* When day is marked done — fade the section border green */
+  .day-section.is-done { border-color: rgba(52,211,153,0.35); }
+  .day-section.is-done .day-header { background: rgba(52,211,153,0.04); }
+  .day-section.is-done .day-num { color: var(--accent3); }
+ 
+  /* ── OVERALL PROGRESS BAR (header) ── */
+  .overall-progress {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .overall-track {
+    flex: 1; max-width: 260px;
+    height: 5px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .overall-fill {
+    height: 100%;
+    background: var(--accent3);
+    border-radius: 5px;
+    transition: width 0.4s ease;
+  }
+  .overall-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--text-dim);
+    white-space: nowrap;
+  }
+  .overall-label span { color: var(--accent3); font-weight: 600; }
 </style>
 </head>
 <body>
-
+ 
 <header>
   <div class="header-tag">CPCS-222 · Discrete Structures · KAU FCIT</div>
   <h1>Final Exam Master Guide</h1>
@@ -455,30 +528,41 @@
     <div class="day-pill">Day 8 — Induction</div>
     <div class="day-pill">Day 9 — Full Drill</div>
   </div>
+  <div class="overall-progress">
+    <div class="overall-track">
+      <div class="overall-fill" id="overallFill" style="width:0%"></div>
+    </div>
+    <div class="overall-label" id="overallLabel"><span id="doneCount">0</span> / 9 days completed</div>
+  </div>
 </header>
-
+ 
 <div class="container">
-
+ 
   <!-- ── REAL TALK ── -->
   <div class="alert critical" style="margin-top:32px;">
     <strong>READ THIS FIRST — Honest Assessment</strong><br>
     Your professor said the final is harder than the midterm. That means you cannot memorize; you need to understand. The topics below build on each other. Mathematical Induction, for example, requires you to be fluent in summation manipulation. Relations require you to be solid on sets. Plan accordingly — do not skip a weak day and move on.
   </div>
-
+ 
   <!-- ── 9-DAY SCHEDULE ── -->
-  <div class="day-section">
+  <div class="day-section" id="sec-overview">
     <div class="day-header" onclick="toggle(this)">
       <span class="day-num">Overview</span>
       <span class="day-title">Your 9-Day Battle Plan</span>
       <span class="day-badge badge-review">Master Schedule</span>
+      <label class="done-checkbox" onclick="event.stopPropagation()" title="Mark as done">
+        <input type="checkbox" id="chk-overview" onchange="markDone(this,'sec-overview')">
+        <div class="done-box"><span class="check-icon">✓</span></div>
+        <span class="done-label">Done</span>
+      </label>
       <span class="chevron">▾</span>
     </div>
     <div class="day-body">
-
+ 
       <div class="alert info">
         <strong>The Rule:</strong> Watch the recorded lecture first (your plan). Then open this guide for that day. Do not skip the practice at the end of each day — it is the only way to know if you actually understood anything.
       </div>
-
+ 
       <div class="schedule-grid">
         <div class="sched-card"><div class="sched-day">DAY 1</div><div class="sched-topic">Logic Foundations Review</div><div class="sched-time">~3–4 hrs</div></div>
         <div class="sched-card"><div class="sched-day">DAY 2</div><div class="sched-topic">Rules of Inference + Proofs</div><div class="sched-time">~4–5 hrs</div></div>
@@ -490,12 +574,12 @@
         <div class="sched-card"><div class="sched-day">DAY 8</div><div class="sched-topic">Mathematical Induction</div><div class="sched-time">~4–5 hrs</div></div>
         <div class="sched-card"><div class="sched-day">DAY 9</div><div class="sched-topic">Full Exam Drill — All Topics</div><div class="sched-time">~5–6 hrs</div></div>
       </div>
-
+ 
       <div class="big-tip">
         <h4>How to Study Each Day</h4>
         Watch lecture → Read this guide → Do practice problems from your slides → Write out proofs/solutions by hand (do not type them) → Close everything and reproduce the key formulas from memory on blank paper. If you cannot reproduce it from memory, you do not know it.
       </div>
-
+ 
       <p class="section-title">Difficulty Map (honest)</p>
       <div class="progress-row"><span class="progress-label">Logic & Truth Tables</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:30%;background:#34d399;"></div></div><span style="font-family:monospace;font-size:12px;color:#34d399;">Low (you know this)</span></div>
       <div class="progress-row"><span class="progress-label">Rules of Inference</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:50%;background:#4f8ef7;"></div></div><span style="font-family:monospace;font-size:12px;color:#4f8ef7;">Medium</span></div>
@@ -508,13 +592,18 @@
       <div class="progress-row"><span class="progress-label">Mathematical Induction</span><div class="progress-bar-wrap"><div class="progress-bar" style="width:90%;background:#f87171;"></div></div><span style="font-family:monospace;font-size:12px;color:#f87171;">Hardest — do not rush this</span></div>
     </div>
   </div>
-
+ 
   <!-- ══════════════════════════════ DAY 1 ══════════════════════════════ -->
-  <div class="day-section">
+  <div class="day-section" id="sec-day1">
     <div class="day-header" onclick="toggle(this)">
       <span class="day-num">Day 1</span>
       <span class="day-title">Logic & Truth Tables — Deep Refresh</span>
       <span class="day-badge badge-review">Review + Extend</span>
+      <label class="done-checkbox" onclick="event.stopPropagation()" title="Mark as done">
+        <input type="checkbox" id="chk-day1" onchange="markDone(this,'sec-day1')">
+        <div class="done-box"><span class="check-icon">✓</span></div>
+        <span class="done-label">Done</span>
+      </label>
       <span class="chevron">▾</span>
     </div>
     <div class="day-body">
@@ -522,7 +611,7 @@
         <h4>📋 What You Need Before Starting</h4>
         <p>You said you already know Chapter 1 parts 1–3. This day is about <strong>plugging the gaps</strong>: quantifiers, nested quantifiers, and the logical equivalence proof techniques that appear on harder exams. Do NOT skip this because you think you know it. The exam goes harder than the midterm.</p>
       </div>
-
+ 
       <div class="two-col">
         <div class="card">
           <h4 class="accent">Core Connectives — Must Know</h4>
@@ -547,7 +636,7 @@
           </ul>
         </div>
       </div>
-
+ 
       <p class="section-title">The Implication Family</p>
       <div class="formula-block">
 <span class="label">Original:     </span>  p → q
@@ -557,7 +646,7 @@
 <span class="comment">// Key rewrite (memorize this!)</span>
 <span class="highlight">p → q  ≡  ¬p ∨ q</span>
       </div>
-
+ 
       <p class="section-title">Logical Equivalences — The Non-Negotiable List</p>
       <div class="formula-block">
 <span class="label">De Morgan's:</span>   ¬(p ∧ q) ≡ ¬p ∨ ¬q
@@ -570,7 +659,7 @@
 <span class="label">Implication: </span>   p → q ≡ ¬p ∨ q
 <span class="label">Biconditional:</span>  p ↔ q ≡ (p → q) ∧ (q → p)
       </div>
-
+ 
       <p class="section-title">Quantifiers — What the Exam Will Test You On</p>
       <div class="two-col">
         <div class="card">
@@ -591,7 +680,7 @@
           <div class="trap-box"><strong>Classic error:</strong> Students mix → and ∧ between universal and existential. Universal uses →. Existential uses ∧.</div>
         </div>
       </div>
-
+ 
       <p class="section-title">Nested Quantifiers — Order Matters</p>
       <table>
         <tr><th>Statement</th><th>When True</th><th>When False</th></tr>
@@ -603,13 +692,18 @@
       <div class="trap-box"><strong>Critical:</strong> ∀x ∃y P(x,y) is NOT the same as ∃y ∀x P(x,y). The second requires ONE y that works for every x simultaneously.</div>
     </div>
   </div>
-
+ 
   <!-- ══════════════════════════════ DAY 2 ══════════════════════════════ -->
-  <div class="day-section">
+  <div class="day-section" id="sec-day2">
     <div class="day-header collapsed" onclick="toggle(this)">
       <span class="day-num">Day 2</span>
       <span class="day-title">Rules of Inference + Proof Methods</span>
       <span class="day-badge badge-hard">High Exam Weight</span>
+      <label class="done-checkbox" onclick="event.stopPropagation()" title="Mark as done">
+        <input type="checkbox" id="chk-day2" onchange="markDone(this,'sec-day2')">
+        <div class="done-box"><span class="check-icon">✓</span></div>
+        <span class="done-label">Done</span>
+      </label>
       <span class="chevron">▾</span>
     </div>
     <div class="day-body hidden">
@@ -617,7 +711,7 @@
         <h4>📋 Prerequisites</h4>
         <p>You need to be completely solid on Day 1 — specifically p → q truth table and logical equivalences. Rules of inference are just structured applications of those equivalences.</p>
       </div>
-
+ 
       <p class="section-title">Rules of Inference — All 8 (Memorize Every One)</p>
       <table>
         <tr><th>Name</th><th>Form</th><th>Example</th></tr>
@@ -630,7 +724,7 @@
         <tr><td><strong>Conjunction</strong></td><td class="mono">p, q ⊢ p∧q</td><td>Both separately true → both together true</td></tr>
         <tr><td><strong>Resolution</strong></td><td class="mono">p∨q, ¬p∨r ⊢ q∨r</td><td>Used in AI/Prolog; cancel the matching literals</td></tr>
       </table>
-
+ 
       <p class="section-title">For Quantified Statements</p>
       <table>
         <tr><th>Rule</th><th>What It Does</th></tr>
@@ -639,7 +733,7 @@
         <tr><td><strong>Existential Instantiation (EI)</strong></td><td>∃x P(x) → name a specific element c such that P(c) is true. Use a fresh name.</td></tr>
         <tr><td><strong>Existential Generalization (EG)</strong></td><td>P(c) is true for some c → ∃x P(x).</td></tr>
       </table>
-
+ 
       <p class="section-title">Proof Methods — Know When to Use Each</p>
       <div class="two-col">
         <div class="card">
@@ -665,7 +759,7 @@ n² = (2k)² = 4k² = 2(2k²) → n² is even
 ∴ By contrapositive, n² odd → n odd ✓</div>
         </div>
       </div>
-
+ 
       <div class="two-col" style="margin-top:16px;">
         <div class="card">
           <h4 class="danger">Proof by Contradiction</h4>
@@ -686,7 +780,7 @@ n² = (2k)² = 4k² = 2(2k²) → n² is even
           <div class="trap-box"><strong>Biconditional proofs:</strong> To prove p↔q you must prove BOTH p→q AND q→p. Half credit if you only do one direction.</div>
         </div>
       </div>
-
+ 
       <p class="section-title">What the Exam Expects — Step Format</p>
       <div class="proof-block">
         <span class="pline">Step 1:  ¬p ∧ q        <span class="reason">— Premise</span></span>
@@ -699,13 +793,18 @@ n² = (2k)² = 4k² = 2(2k²) → n² is even
       <div class="trap-box"><strong>Every step needs a justification.</strong> Writing the result without naming the rule used will cost you marks.</div>
     </div>
   </div>
-
+ 
   <!-- ══════════════════════════════ DAY 3 ══════════════════════════════ -->
-  <div class="day-section">
+  <div class="day-section" id="sec-day3">
     <div class="day-header collapsed" onclick="toggle(this)">
       <span class="day-num">Day 3</span>
       <span class="day-title">Sets — All Operations and Identities</span>
       <span class="day-badge badge-new">Fresh Topic</span>
+      <label class="done-checkbox" onclick="event.stopPropagation()" title="Mark as done">
+        <input type="checkbox" id="chk-day3" onchange="markDone(this,'sec-day3')">
+        <div class="done-box"><span class="check-icon">✓</span></div>
+        <span class="done-label">Done</span>
+      </label>
       <span class="chevron">▾</span>
     </div>
     <div class="day-body hidden">
@@ -713,7 +812,7 @@ n² = (2k)² = 4k² = 2(2k²) → n² is even
         <h4>📋 Prerequisites</h4>
         <p>Set identities mirror logical equivalences exactly. If you know De Morgan's for logic, you already know De Morgan's for sets. The connection is: ∪ corresponds to ∨, ∩ corresponds to ∧, complement corresponds to ¬.</p>
       </div>
-
+ 
       <p class="section-title">Core Definitions</p>
       <div class="two-col">
         <div class="card">
@@ -740,7 +839,7 @@ n² = (2k)² = 4k² = 2(2k²) → n² is even
           </details>
         </div>
       </div>
-
+ 
       <p class="section-title">Set Operations</p>
       <table>
         <tr><th>Operation</th><th>Symbol</th><th>Definition</th><th>Venn</th></tr>
@@ -750,16 +849,16 @@ n² = (2k)² = 4k² = 2(2k²) → n² is even
         <tr><td><strong>Difference</strong></td><td class="mono">A − B</td><td>x∈A and x∉B = A ∩ B̄</td><td>A minus overlap</td></tr>
         <tr><td><strong>Sym. Difference</strong></td><td class="mono">A ⊕ B</td><td>(A∪B) − (A∩B)</td><td>both circles, no overlap</td></tr>
       </table>
-
+ 
       <p class="section-title">Inclusion-Exclusion (Cardinality)</p>
       <div class="formula-block">
 |A ∪ B| = |A| + |B| − |A ∩ B|
-
+ 
 <span class="comment">// Always subtract the intersection — you counted it twice!</span>
 <span class="comment">// Example: A={1,2,3,4,5}, B={4,5,6,7,8}</span>
 <span class="comment">// |A∪B| = 5 + 5 − 2 = 8 ✓</span>
       </div>
-
+ 
       <p class="section-title">Set Identities (Mirror of Logic Laws)</p>
       <div class="formula-block">
 <span class="label">De Morgan's:   </span>  A ∪ B  ̄ = Ā ∩ B̄     and     A ∩ B  ̄ = Ā ∪ B̄
@@ -768,7 +867,7 @@ n² = (2k)² = 4k² = 2(2k²) → n² is even
 <span class="label">Complement:    </span>  A ∪ Ā = U     and     A ∩ Ā = ∅
 <span class="label">Identity:      </span>  A ∪ ∅ = A     and     A ∩ U = A
       </div>
-
+ 
       <p class="section-title">How to Prove a Set Identity (3 Methods)</p>
       <div class="steps">
         <div class="step"><div class="step-num">1</div><div class="step-body"><strong>Subset method</strong><p>Show A⊆B then B⊆A. Takes longest but always works.</p></div></div>
@@ -777,13 +876,18 @@ n² = (2k)² = 4k² = 2(2k²) → n² is even
       </div>
     </div>
   </div>
-
+ 
   <!-- ══════════════════════════════ DAY 4 ══════════════════════════════ -->
-  <div class="day-section">
+  <div class="day-section" id="sec-day4">
     <div class="day-header collapsed" onclick="toggle(this)">
       <span class="day-num">Day 4</span>
       <span class="day-title">Sequences + Summations — The Calculation Day</span>
       <span class="day-badge badge-hard">Hard — Needs Drill</span>
+      <label class="done-checkbox" onclick="event.stopPropagation()" title="Mark as done">
+        <input type="checkbox" id="chk-day4" onchange="markDone(this,'sec-day4')">
+        <div class="done-box"><span class="check-icon">✓</span></div>
+        <span class="done-label">Done</span>
+      </label>
       <span class="chevron">▾</span>
     </div>
     <div class="day-body hidden">
@@ -791,7 +895,7 @@ n² = (2k)² = 4k² = 2(2k²) → n² is even
         <h4>📋 Prerequisites</h4>
         <p>Basic algebra. You need to be comfortable identifying what is a constant vs a variable inside a summation (the index is the only variable). This day requires you to practice problems by hand — reading is not enough.</p>
       </div>
-
+ 
       <p class="section-title">Sequences</p>
       <div class="two-col">
         <div class="card">
@@ -810,17 +914,17 @@ f₈=21, f₉=34, f₁₀=55</div>
           <p style="font-size:13px;color:var(--text-dim);">Memorize the first 10 terms. Exam questions often ask you to compute fₙ from scratch.</p>
         </div>
       </div>
-
+ 
       <p class="section-title">Summation — The Central Skill</p>
       <div class="formula-block">
 <span class="comment">// The "what is a variable?" rule — MOST IMPORTANT</span>
 <span class="comment">// Only the INDEX LETTER is a variable inside a summation.</span>
 <span class="comment">// Everything else is a constant, no matter what it looks like.</span>
-
+ 
 ∑(i=1 to n) 42j    <span class="comment">← i is index, j is CONSTANT → answer: 42j·n</span>
 ∑(Bob=1 to n) Jeff  <span class="comment">← Bob is index, Jeff is CONSTANT → answer: Jeff·n</span>
       </div>
-
+ 
       <p class="section-title">Closed-Form Formulas — Must Memorize All of These</p>
       <div class="formula-block">
 <span class="label">Sum of 1s:     </span> ∑(i=1 to n) 1          = n
@@ -831,31 +935,36 @@ f₈=21, f₉=34, f₁₀=55</div>
 <span class="label">Split sums:    </span> ∑(f(i)+g(i))           = ∑f(i) + ∑g(i)
 <span class="label">Change limits: </span> ∑(i=m to n) f(i)       = ∑(i=1 to n) f(i) − ∑(i=1 to m−1) f(i)
       </div>
-
+ 
       <div class="alert critical">
         <strong>The Limit-Shift Rule is the Most Tested</strong><br>
         When the lower limit is NOT 1, you must subtract: ∑(i=m to n) = ∑(i=1 to n) − ∑(i=1 to m−1). This is how your professor solved Problems 4 and 5 in the slides. Practice this until it is automatic.
       </div>
-
+ 
       <p class="section-title">Nested Summations — Work from Right to Left</p>
       <div class="formula-block">
 ∑(i=1 to n) ∑(j=1 to m) c    <span class="comment">← start with inner (j), c is constant</span>
 = ∑(i=1 to n) c·m             <span class="comment">← c·m is constant w.r.t. i</span>
 = c·m·n
-
+ 
 ∑(i=1 to n) ∑(j=1 to i) c    <span class="comment">← inner gives c·i (i appears!)</span>
 = ∑(i=1 to n) c·i             <span class="comment">← now i IS a variable</span>
 = c · n(n+1)/2
       </div>
     </div>
   </div>
-
+ 
   <!-- ══════════════════════════════ DAY 5 ══════════════════════════════ -->
-  <div class="day-section">
+  <div class="day-section" id="sec-day5">
     <div class="day-header collapsed" onclick="toggle(this)">
       <span class="day-num">Day 5</span>
       <span class="day-title">Functions — Injections, Surjections, Bijections</span>
       <span class="day-badge badge-new">New Topic</span>
+      <label class="done-checkbox" onclick="event.stopPropagation()" title="Mark as done">
+        <input type="checkbox" id="chk-day5" onchange="markDone(this,'sec-day5')">
+        <div class="done-box"><span class="check-icon">✓</span></div>
+        <span class="done-label">Done</span>
+      </label>
       <span class="chevron">▾</span>
     </div>
     <div class="day-body hidden">
@@ -863,7 +972,7 @@ f₈=21, f₉=34, f₁₀=55</div>
         <h4>📋 Prerequisites</h4>
         <p>Sets (Day 3). Functions are defined as a subset of A×B. You also need to know what domain, codomain, and range mean precisely — these are different things and the exam will test that distinction.</p>
       </div>
-
+ 
       <p class="section-title">Core Vocabulary — Every Term Will Appear on the Exam</p>
       <table>
         <tr><th>Term</th><th>Definition</th><th>Example</th></tr>
@@ -872,9 +981,9 @@ f₈=21, f₉=34, f₁₀=55</div>
         <tr><td><strong>Range / Image</strong></td><td>Actual output values (subset of codomain)</td><td>f(x)=x², range = {0,1,4,9,...}</td></tr>
         <tr><td><strong>Preimage</strong></td><td>Which input maps to a given output</td><td>Preimage of 4 under x² is {2,−2}</td></tr>
       </table>
-
+ 
       <div class="trap-box"><strong>Range ≠ Codomain.</strong> Codomain is what you declare; range is what you actually hit. f: ℤ→ℤ with f(x)=x² has codomain ℤ but range {0,1,4,9,16,...} — not all integers are squares.</div>
-
+ 
       <p class="section-title">The Three Types of Functions</p>
       <div class="two-col">
         <div class="card">
@@ -882,10 +991,10 @@ f₈=21, f₉=34, f₁₀=55</div>
           <p style="font-size:13px;color:var(--text-dim);margin-bottom:10px;"><strong>Rule:</strong> f(a) = f(b) ⟹ a = b. Different inputs give different outputs.</p>
           <div class="formula-block">To PROVE injection:
 Assume f(a) = f(b), show a = b algebraically.
-
+ 
 To DISPROVE:
 Find two inputs a ≠ b with f(a) = f(b).
-
+ 
 Example: f(x) = 2x+1 IS injective
 Example: f(x) = x² is NOT injective
   (f(2)=f(−2)=4, but 2≠−2)</div>
@@ -897,55 +1006,60 @@ Example: f(x) = x² is NOT injective
 Take an arbitrary b in codomain.
 Solve for a in terms of b.
 Show a is in the domain.
-
+ 
 Example: f: ℤ→ℤ, f(x)=x+1 IS surjective
 Example: f: ℤ→ℤ, f(x)=x² is NOT surjective
   (no integer squares to −1)</div>
         </div>
       </div>
-
+ 
       <div class="card" style="margin-top:16px;">
         <h4 class="green">Bijection = Injective + Surjective</h4>
         <p style="font-size:13px;color:var(--text-dim);">A bijection is a perfect one-to-one correspondence. <strong>Only bijections have inverses.</strong> If f is not a bijection, f⁻¹ does not exist.</p>
       </div>
-
+ 
       <p class="section-title">Inverse Functions</p>
       <div class="formula-block">
 f must be a bijection for f⁻¹ to exist.
 f⁻¹(y) = x  iff  f(x) = y
-
+ 
 Example: f(x) = x + 1
 Inverse: f⁻¹(y) = y − 1
 (Every output y maps back to exactly one input x = y−1)
       </div>
-
+ 
       <p class="section-title">Function Composition</p>
       <div class="formula-block">
 (f ∘ g)(x) = f(g(x))    <span class="comment">← apply g first, then f</span>
-
+ 
 Example: f(x) = 2x+3,  g(x) = 3x+2
 (f ∘ g)(x) = f(3x+2) = 2(3x+2)+3 = 6x+7
 (g ∘ f)(x) = g(2x+3) = 3(2x+3)+2 = 6x+11
 <span class="comment">// NOTE: f∘g ≠ g∘f in general!</span>
       </div>
-
+ 
       <p class="section-title">Floor and Ceiling</p>
       <div class="formula-block">
 ⌊x⌋ = largest integer ≤ x    (floor)
 ⌈x⌉ = smallest integer ≥ x   (ceiling)
-
+ 
 ⌊3.7⌋ = 3    ⌈3.7⌉ = 4
 ⌊−2.3⌋ = −3  ⌈−2.3⌉ = −2    <span class="comment">← negative numbers trip people up!</span>
       </div>
     </div>
   </div>
-
+ 
   <!-- ══════════════════════════════ DAY 6 ══════════════════════════════ -->
-  <div class="day-section">
+  <div class="day-section" id="sec-day6">
     <div class="day-header collapsed" onclick="toggle(this)">
       <span class="day-num">Day 6</span>
       <span class="day-title">Relations — Properties, Matrices, Digraphs, Equivalence</span>
       <span class="day-badge badge-hard">High Volume</span>
+      <label class="done-checkbox" onclick="event.stopPropagation()" title="Mark as done">
+        <input type="checkbox" id="chk-day6" onchange="markDone(this,'sec-day6')">
+        <div class="done-box"><span class="check-icon">✓</span></div>
+        <span class="done-label">Done</span>
+      </label>
       <span class="chevron">▾</span>
     </div>
     <div class="day-body hidden">
@@ -953,7 +1067,7 @@ Example: f(x) = 2x+3,  g(x) = 3x+2
         <h4>📋 Prerequisites</h4>
         <p>Sets (Day 3). A relation on A is a subset of A×A. Functions are a special case of relations. You need to be comfortable reading and writing ordered pairs.</p>
       </div>
-
+ 
       <p class="section-title">The Four Properties — Know These Definitions Exactly</p>
       <table>
         <tr><th>Property</th><th>Definition</th><th>Matrix Test</th><th>Digraph Test</th></tr>
@@ -962,11 +1076,11 @@ Example: f(x) = 2x+3,  g(x) = 3x+2
         <tr><td><strong>Antisymmetric</strong></td><td>(a,b)∈R ∧ (b,a)∈R → a=b</td><td>mᵢⱼ=1 ∧ mⱼᵢ=1 only if i=j</td><td>No two-way arrows between different vertices</td></tr>
         <tr><td><strong>Transitive</strong></td><td>(a,b)∈R ∧ (b,c)∈R → (a,c)∈R</td><td>M² ∧ M ≤ M (complex)</td><td>If path a→b→c exists, edge a→c exists</td></tr>
       </table>
-
+ 
       <div class="alert critical">
         <strong>Symmetric vs Antisymmetric are NOT opposites.</strong> A relation can be both (e.g., the equality relation: a=b) or neither (e.g., {(1,2),(2,1),(1,3)}). Do not assume excluding one implies the other.
       </div>
-
+ 
       <p class="section-title">Equivalence Relations</p>
       <div class="two-col">
         <div class="card">
@@ -990,30 +1104,35 @@ Transitive: if m|(a−b) and m|(b−c)
           <div class="trap-box"><strong>Exam favorite:</strong> You'll be given a relation and asked if it's an equivalence relation. Check all three properties and show your work for each.</div>
         </div>
       </div>
-
+ 
       <p class="section-title">Relation Matrices — How to Read and Write</p>
       <div class="formula-block">
 R on A = {1,2,3}, with R = {(1,1),(1,2),(2,3),(3,1)}
-
+ 
 Matrix Mᴿ (row = from, col = to):
      1  2  3
 1  [ 1  1  0 ]
 2  [ 0  0  1 ]
 3  [ 1  0  0 ]
-
+ 
 Reflexive?  No — (2,2) and (3,3) missing (diagonal not all 1s)
 Symmetric?  No — (1,2)∈R but (2,1)∉R
 Transitive? Check: (1,2)∈R and (2,3)∈R → need (1,3)∈R — NOT present → Not transitive
       </div>
     </div>
   </div>
-
+ 
   <!-- ══════════════════════════════ DAY 7 ══════════════════════════════ -->
-  <div class="day-section">
+  <div class="day-section" id="sec-day7">
     <div class="day-header collapsed" onclick="toggle(this)">
       <span class="day-num">Day 7</span>
       <span class="day-title">Counting — Product/Sum Rules, Pigeonhole, P&C</span>
       <span class="day-badge badge-hard">Problem-Heavy</span>
+      <label class="done-checkbox" onclick="event.stopPropagation()" title="Mark as done">
+        <input type="checkbox" id="chk-day7" onchange="markDone(this,'sec-day7')">
+        <div class="done-box"><span class="check-icon">✓</span></div>
+        <span class="done-label">Done</span>
+      </label>
       <span class="chevron">▾</span>
     </div>
     <div class="day-body hidden">
@@ -1021,14 +1140,14 @@ Transitive? Check: (1,2)∈R and (2,3)∈R → need (1,3)∈R — NOT present �
         <h4>📋 Prerequisites</h4>
         <p>Basic arithmetic. Factorials. Willingness to reason carefully about whether order matters. This topic requires you to read problems extremely carefully — one word changes the entire approach.</p>
       </div>
-
+ 
       <p class="section-title">The Two Fundamental Rules</p>
       <div class="two-col">
         <div class="card">
           <h4 class="accent">Product Rule</h4>
           <p style="font-size:13px;color:var(--text-dim);margin-bottom:10px;">When doing task 1 <strong>AND</strong> task 2: multiply.</p>
           <div class="formula-block">n₁ × n₂ × ... × nₖ
-
+ 
 Example: 4-digit strings with no repeat
 = 10 × 9 × 8 × 7 = 5040
 (Each position: AND the next position)</div>
@@ -1037,17 +1156,17 @@ Example: 4-digit strings with no repeat
           <h4 class="accent2">Sum Rule</h4>
           <p style="font-size:13px;color:var(--text-dim);margin-bottom:10px;">When doing task 1 <strong>OR</strong> task 2 (mutually exclusive): add.</p>
           <div class="formula-block">n₁ + n₂ + ... + nₖ
-
+ 
 Example: 18 math majors OR 325 CS majors
 = 18 + 325 = 343
 (Picking one type OR the other)</div>
         </div>
       </div>
-
+ 
       <p class="section-title">Inclusion-Exclusion</p>
       <div class="formula-block">
 |A₁ ∪ A₂| = |A₁| + |A₂| − |A₁ ∩ A₂|
-
+ 
 <span class="comment">// Use when tasks are NOT mutually exclusive</span>
 <span class="comment">// Example: bit strings of length 8 that start with 1 OR end with 00</span>
 |start with 1| = 2⁷ = 128
@@ -1055,17 +1174,17 @@ Example: 18 math majors OR 325 CS majors
 |both|         = 2⁵ = 32
 Total = 128 + 64 − 32 = 160
       </div>
-
+ 
       <p class="section-title">Permutations vs Combinations — The Key Decision</p>
       <div class="two-col">
         <div class="card">
           <h4 class="green">Permutations — Order Matters</h4>
           <div class="formula-block">P(n,r) = n! / (n−r)!
          = n × (n−1) × ... × (n−r+1)
-
+ 
 Example: 5 presentations from 27 students
 P(27,5) = 27×26×25×24×23 = 9,687,600
-
+ 
 <span class="comment">// Use when: ranked list, sequence, arrangement</span>
 <span class="comment">// "First place, second place..." → Permutation</span></div>
         </div>
@@ -1073,24 +1192,24 @@ P(27,5) = 27×26×25×24×23 = 9,687,600
           <h4 class="pink">Combinations — Order Does NOT Matter</h4>
           <div class="formula-block">C(n,r) = n! / (r! × (n−r)!)
          = P(n,r) / r!
-
+ 
 Example: 5-card poker hand from 52 cards
 C(52,5) = 52!/(5!×47!) = 2,598,960
-
+ 
 <span class="comment">// Use when: selection, group, committee</span>
 <span class="comment">// "Choose 5 students for a team" → Combination</span></div>
         </div>
       </div>
-
+ 
       <div class="trap-box"><strong>The #1 Counting Error:</strong> Using permutations when the problem says order doesn't matter, or vice versa. Ask yourself: would swapping two elements create a "different" outcome? If yes → Permutation. If no → Combination.</div>
-
+ 
       <div class="card" style="margin-top:16px;">
         <h4 class="warn">Useful Identity</h4>
         <div class="formula-block">C(n,r) = C(n, n−r)
 <span class="comment">// Choosing 5 to include = choosing 47 to exclude</span>
 <span class="comment">// C(52,5) = C(52,47). Obvious but useful for simplification.</span></div>
       </div>
-
+ 
       <p class="section-title">Pigeonhole Principle</p>
       <div class="two-col">
         <div class="card">
@@ -1098,7 +1217,7 @@ C(52,5) = 52!/(5!×47!) = 2,598,960
           <p style="font-size:13px;color:var(--text-dim);">If k+1 objects go into k boxes, at least one box has 2+ objects.</p>
           <div class="formula-block">367 people → some two share a birthday
 (366 possible birthdays = 366 "boxes")
-
+ 
 27 words → two start with same letter
 (26 letters = 26 "boxes")</div>
         </div>
@@ -1108,28 +1227,33 @@ C(52,5) = 52!/(5!×47!) = 2,598,960
           <div class="formula-block">Ensure 6 students with same grade (A/B/C/D/F):
 k = 5 boxes (grades)
 ⌈N/5⌉ ≥ 6 → N/5 > 5 → N > 25 → N = 26
-
+ 
 <span class="comment">// Formula: set ⌈N/k⌉ = target, solve for N</span></div>
         </div>
       </div>
-
+ 
       <p class="section-title">Circular Permutations</p>
       <div class="formula-block">
 Seating n people at a circular table:
 (n−1)! arrangements    <span class="comment">← fix one person, arrange the rest</span>
-
+ 
 Example: 6 people at circular table = (6−1)! = 5! = 120
 Alternative: 6!/6 = 120 (total arrangements / rotations)
       </div>
     </div>
   </div>
-
+ 
   <!-- ══════════════════════════════ DAY 8 ══════════════════════════════ -->
-  <div class="day-section">
+  <div class="day-section" id="sec-day8">
     <div class="day-header collapsed" onclick="toggle(this)">
       <span class="day-num">Day 8</span>
       <span class="day-title">Mathematical Induction — The Hardest Topic</span>
       <span class="day-badge badge-hard">Hardest Day</span>
+      <label class="done-checkbox" onclick="event.stopPropagation()" title="Mark as done">
+        <input type="checkbox" id="chk-day8" onchange="markDone(this,'sec-day8')">
+        <div class="done-box"><span class="check-icon">✓</span></div>
+        <span class="done-label">Done</span>
+      </label>
       <span class="chevron">▾</span>
     </div>
     <div class="day-body hidden">
@@ -1137,12 +1261,12 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
         <h4>📋 Prerequisites — Critical</h4>
         <p>You need summation formulas from Day 4 cold. Induction proofs for summations require you to manipulate the summation algebraically during the inductive step. You also need to understand the difference between what you are given (inductive hypothesis) and what you must prove (inductive step). Without Day 4, this day will be impossible.</p>
       </div>
-
+ 
       <div class="alert critical">
         <strong>How Induction Actually Works (Conceptually)</strong><br>
         You prove a chain: P(1) is true. If P(k) is true, then P(k+1) is true. This is like dominos — knock down the first one, and since each knocks the next, they all fall. The exam will test if you understand WHY each step is required, not just that you memorized the template.
       </div>
-
+ 
       <p class="section-title">The Template — Never Deviate From This Format</p>
       <div class="proof-block">
         <span class="pline"><strong>Goal:</strong> Prove P(n) for all positive integers n</span>
@@ -1162,69 +1286,74 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
         <span class="pline"><strong>Conclusion:</strong></span>
         <span class="pline">   By mathematical induction, P(n) is true for all positive integers n. ∎</span>
       </div>
-
+ 
       <p class="section-title">Full Worked Example — Do This Yourself After Reading</p>
       <div class="formula-block">
 <span class="label">Prove: </span>  ∑(i=1 to n) i = n(n+1)/2   for all n ≥ 1
-
+ 
 <span class="label">Base Case (n=1):</span>
   LHS = ∑(i=1 to 1) i = 1
   RHS = 1(1+1)/2 = 1 ✓
-
+ 
 <span class="label">Inductive Hypothesis:</span>
   Assume ∑(i=1 to k) i = k(k+1)/2  for some k ≥ 1.
-
+ 
 <span class="label">Inductive Step — Prove P(k+1):</span>
   Need to show: ∑(i=1 to k+1) i = (k+1)(k+2)/2
-
+ 
   LHS = ∑(i=1 to k+1) i
       = [∑(i=1 to k) i] + (k+1)          <span class="comment">← "the thing": split off last term</span>
       = k(k+1)/2 + (k+1)                  <span class="comment">← substitute I.H.</span>
       = k(k+1)/2 + 2(k+1)/2              <span class="comment">← common denominator</span>
       = (k+1)(k+2)/2                      <span class="comment">← factor out (k+1)</span>
       = RHS of P(k+1) ✓
-
+ 
 <span class="highlight">By mathematical induction, the formula holds for all n ≥ 1. ∎</span>
       </div>
-
+ 
       <p class="section-title">The Critical Technique — "The Thing"</p>
       <div class="formula-block">
 ∑(i=1 to k+1) f(i) = ∑(i=1 to k) f(i)  +  f(k+1)
                     = [I.H. gives you this]  +  f(k+1)
-
+ 
 <span class="comment">This is how you get the I.H. into the inductive step every single time.</span>
 <span class="comment">Peel off the last term. See the k-sum. Apply I.H. Simplify to target.</span>
       </div>
-
+ 
       <div class="trap-box"><strong>Biggest Induction Error:</strong> Students write "assume P(k+1)" in the hypothesis instead of "assume P(k)". You assume P(k) and PROVE P(k+1). These are different.</div>
-
+ 
       <div class="trap-box"><strong>Second Biggest Error:</strong> In the inductive step, going in the wrong direction. Start from the LEFT SIDE of what you need to prove (P(k+1)), and show it equals the RIGHT SIDE. Do not start from the I.H. and hope you reach P(k+1).</div>
-
+ 
       <p class="section-title">Second Practice Example — Odd Integers</p>
       <div class="formula-block">
 <span class="label">Prove: </span>  ∑(i=1 to n) (2i−1) = n²   for all n ≥ 1
-
+ 
 <span class="label">Base Case (n=1):</span>  LHS = 2(1)−1 = 1.  RHS = 1² = 1. ✓
-
+ 
 <span class="label">Inductive Hypothesis:</span>  Assume ∑(i=1 to k) (2i−1) = k²
-
+ 
 <span class="label">Inductive Step — Prove:</span>  ∑(i=1 to k+1) (2i−1) = (k+1)²
-
+ 
   LHS = [∑(i=1 to k) (2i−1)] + (2(k+1)−1)
       = k² + (2k+1)              <span class="comment">← I.H. + peel last term</span>
       = (k+1)²  ✓
-
+ 
 <span class="highlight">By induction, holds for all n ≥ 1. ∎</span>
       </div>
     </div>
   </div>
-
+ 
   <!-- ══════════════════════════════ DAY 9 ══════════════════════════════ -->
-  <div class="day-section">
+  <div class="day-section" id="sec-day9">
     <div class="day-header collapsed" onclick="toggle(this)">
       <span class="day-num">Day 9</span>
       <span class="day-title">Full Exam Drill — Every Topic Under Pressure</span>
       <span class="day-badge badge-practice">Exam Simulation</span>
+      <label class="done-checkbox" onclick="event.stopPropagation()" title="Mark as done">
+        <input type="checkbox" id="chk-day9" onchange="markDone(this,'sec-day9')">
+        <div class="done-box"><span class="check-icon">✓</span></div>
+        <span class="done-label">Done</span>
+      </label>
       <span class="chevron">▾</span>
     </div>
     <div class="day-body hidden">
@@ -1232,9 +1361,9 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
         <strong>How to Use This Day</strong><br>
         Close all notes. Set a timer. Attempt each problem on blank paper. Only check answers after you've given a genuine attempt. Mark what you got wrong in red. Those are the things you drill again.
       </div>
-
+ 
       <p class="section-title">Topic-by-Topic Drill Questions</p>
-
+ 
       <div class="tabs">
         <button class="tab-btn active" onclick="showTab('t-logic')">Logic</button>
         <button class="tab-btn" onclick="showTab('t-proofs')">Proofs</button>
@@ -1245,7 +1374,7 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
         <button class="tab-btn" onclick="showTab('t-count')">Counting</button>
         <button class="tab-btn" onclick="showTab('t-ind')">Induction</button>
       </div>
-
+ 
       <div id="t-logic" class="tab-panel active">
         <ul class="clean">
           <li>Show using a truth table that p → q ≡ ¬p ∨ q. How many rows? Explain each row.</li>
@@ -1258,7 +1387,7 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
           For item 1: 4 rows, only row (T,F) makes p→q false — that same row makes ¬p∨q false too. For item 4: ¬(∀x ∃y P) = ∃x ¬(∃y P) = ∃x ∀y ¬P(x,y), so the negation is ∃x ∀y (x+y ≠ 0).
         </div></details>
       </div>
-
+ 
       <div id="t-proofs" class="tab-panel">
         <ul class="clean">
           <li>Prove directly: "If n is an odd integer, then 5n + 3 is even."</li>
@@ -1271,7 +1400,7 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
           Item 4: Step 1: ¬r (premise). Step 2: q → r (premise). Step 3: ¬q (Modus Tollens on 1,2). Step 4: p → q (premise). Step 5: ¬p (Modus Tollens on 3,4). QED.
         </div></details>
       </div>
-
+ 
       <div id="t-sets" class="tab-panel">
         <ul class="clean">
           <li>Let U={1..10}, A={1,2,3,4,5}, B={4,5,6,7,8}. Find: A∪B, A∩B, Ā, B̄, A−B, B−A.</li>
@@ -1284,7 +1413,7 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
           Item 3: |A∪B| = 7+5−2 = 10. Item 5: ∅⊆{∅} yes (empty set is subset of everything). ∅∈{∅} yes (∅ is an element of this set). Both true for different reasons.
         </div></details>
       </div>
-
+ 
       <div id="t-sums" class="tab-panel">
         <ul class="clean">
           <li>Evaluate: ∑(i=1 to 100) (3i + 2). Show which rules you apply at each step.</li>
@@ -1297,7 +1426,7 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
           Item 1: Split → 3∑i + 2∑1 = 3·(100·101/2) + 2·100 = 15150 + 200 = 15350. Item 2: = ∑(i=1 to 50)i² − ∑(i=1 to 2)i² = [50·51·101/6] − [1+4] = 42925 − 5 = 42920.
         </div></details>
       </div>
-
+ 
       <div id="t-funcs" class="tab-panel">
         <ul class="clean">
           <li>Is f: ℝ→ℝ with f(x) = 3x−2 injective? Surjective? Bijective? Prove each claim.</li>
@@ -1310,7 +1439,7 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
           Item 1: Injective — assume f(a)=f(b): 3a−2=3b−2 → a=b ✓. Surjective — for any y, x=(y+2)/3 ∈ ℝ ✓. Bijective ✓, so f⁻¹ exists. Item 5: −4, −3, 4, 4, 2, 3.
         </div></details>
       </div>
-
+ 
       <div id="t-rels" class="tab-panel">
         <ul class="clean">
           <li>Let R = {(1,1),(1,2),(2,1),(2,2),(3,3)} on {1,2,3}. Is R reflexive? Symmetric? Antisymmetric? Transitive?</li>
@@ -1323,7 +1452,7 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
           Item 1: Reflexive yes (1,1),(2,2),(3,3) all present. Symmetric yes (1,2) and (2,1) both present. Antisymmetric no (both (1,2) and (2,1) present with 1≠2). Transitive: check all — (1,1),(1,2)→(1,2)✓; (1,2),(2,1)→(1,1)✓; etc. Yes. Item 5: Yes — the equality relation {(1,1),(2,2),(3,3)} is both symmetric and antisymmetric.
         </div></details>
       </div>
-
+ 
       <div id="t-count" class="tab-panel">
         <ul class="clean">
           <li>How many 3-letter strings from {A,B,C,D,E} allow no repetition? Allow repetition?</li>
@@ -1336,7 +1465,7 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
           Item 1: No repeat: P(5,3)=60. With repeat: 5³=125. Item 2: Total − (all letters) = 36⁸ − 26⁸. Item 3: C(12,5) = 792. Item 4: k=12, ⌈N/12⌉≥5 → N≥49 → N=49. Item 5: C(8,3) = 56.
         </div></details>
       </div>
-
+ 
       <div id="t-ind" class="tab-panel">
         <ul class="clean">
           <li>Prove by induction: ∑(i=1 to n) i² = n(n+1)(2n+1)/6</li>
@@ -1349,7 +1478,7 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
           Item 2: Base: 2¹=2 > 1 ✓. I.H.: Assume 2ᵏ > k. I.S.: 2^(k+1) = 2·2ᵏ > 2k = k+k ≥ k+1 (since k≥1) ✓. Item 5: The flaw is "assume P(k+1) is true" — you must PROVE P(k+1) from P(k), not assume it. That would be circular.
         </div></details>
       </div>
-
+ 
       <p class="section-title">Final Day Checklist</p>
       <ul class="clean">
         <li class="green">You can write all summation formulas from memory without looking</li>
@@ -1363,13 +1492,18 @@ Alternative: 6!/6 = 120 (total arrangements / rotations)
       </ul>
     </div>
   </div>
-
+ 
   <!-- ── QUICK REFERENCE CARD ── -->
-  <div class="day-section">
+  <div class="day-section" id="sec-ref">
     <div class="day-header" onclick="toggle(this)">
       <span class="day-num">REF</span>
       <span class="day-title">One-Page Formula Sheet — Everything Critical</span>
       <span class="day-badge badge-review">Print This</span>
+      <label class="done-checkbox" onclick="event.stopPropagation()" title="Mark as done">
+        <input type="checkbox" id="chk-ref" onchange="markDone(this,'sec-ref')">
+        <div class="done-box"><span class="check-icon">✓</span></div>
+        <span class="done-label">Done</span>
+      </label>
       <span class="chevron">▾</span>
     </div>
     <div class="day-body">
@@ -1379,38 +1513,38 @@ p→q ≡ ¬p∨q    |   contrapositive: ¬q→¬p ≡ p→q
 ¬(p∧q) ≡ ¬p∨¬q   |   ¬(p∨q) ≡ ¬p∧¬q   (De Morgan's)
 ¬∀xP(x) ≡ ∃x¬P(x)   |   ¬∃xP(x) ≡ ∀x¬P(x)
 "All S are P" → ∀x(S(x)→P(x))    "Some S are P" → ∃x(S(x)∧P(x))
-
+ 
 <span class="label">═══ SETS ═══</span>
 |A∪B| = |A|+|B|−|A∩B|
 |P(A)| = 2^|A|    |    A=B  iff  A⊆B and B⊆A
 A−B = A∩B̄    |    symmetric diff: A⊕B = (A∪B)−(A∩B)
-
+ 
 <span class="label">═══ SUMMATIONS ═══</span>
 ∑(i=1,n) 1   = n
 ∑(i=1,n) i   = n(n+1)/2
 ∑(i=1,n) i²  = n(n+1)(2n+1)/6
 ∑(i=1,n) i³  = [n(n+1)/2]²
 ∑(i=m,n) f = ∑(i=1,n) f − ∑(i=1,m−1) f    (limit shift)
-
+ 
 <span class="label">═══ FUNCTIONS ═══</span>
 Injective: f(a)=f(b) ⟹ a=b
 Surjective: ∀b∈B, ∃a∈A: f(a)=b
 Bijective = Injective + Surjective → inverse exists
 (f∘g)(x) = f(g(x))   (apply g first)
-
+ 
 <span class="label">═══ RELATIONS ═══</span>
 Reflexive: (a,a)∈R for all a
 Symmetric: (a,b)∈R → (b,a)∈R
 Antisymmetric: (a,b)∈R ∧ (b,a)∈R → a=b
 Transitive: (a,b)∈R ∧ (b,c)∈R → (a,c)∈R
 Equivalence = Reflexive + Symmetric + Transitive
-
+ 
 <span class="label">═══ COUNTING ═══</span>
 P(n,r) = n!/(n−r)!           (ordered, r from n)
 C(n,r) = n!/(r!(n−r)!)       (unordered, r from n)
 C(n,r) = C(n, n−r)           (symmetry)
 Pigeonhole: N objects, k boxes → some box has ⌈N/k⌉
-
+ 
 <span class="label">═══ INDUCTION TEMPLATE ═══</span>
 1. Base Case: Prove P(1) is true. Show LS = RS with n=1.
 2. Inductive Hypothesis: Assume P(k) is true for some k≥1.
@@ -1421,31 +1555,90 @@ Pigeonhole: N objects, k boxes → some box has ⌈N/k⌉
       </div>
     </div>
   </div>
-
+ 
 </div>
-
+ 
 <div class="site-footer">
   CPCS-222 · Built from your actual slides · KAU FCIT · 9 Days to Full Marks
 </div>
-
+ 
 <script>
+  // ── TOGGLE COLLAPSE ──
   function toggle(header) {
     header.classList.toggle('collapsed');
     const body = header.nextElementSibling;
     body.classList.toggle('hidden');
   }
-
+ 
   function showTab(id) {
     document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     document.getElementById(id).classList.add('active');
     event.target.classList.add('active');
   }
-
-  // Open first section by default
-  document.querySelectorAll('.day-body.hidden').forEach(b => {
-    b.classList.add('hidden');
-  });
+ 
+  // ── CHECKBOX IDs (all sections that have checkboxes) ──
+  const SECTION_IDS = [
+    'overview','day1','day2','day3','day4',
+    'day5','day6','day7','day8','day9','ref'
+  ];
+  // Sections that count toward the 9-day progress (exclude overview & ref)
+  const DAY_IDS = ['day1','day2','day3','day4','day5','day6','day7','day8','day9'];
+ 
+  // ── MARK DONE ──
+  function markDone(checkbox, sectionId) {
+    const section = document.getElementById(sectionId);
+    if (checkbox.checked) {
+      section.classList.add('is-done');
+    } else {
+      section.classList.remove('is-done');
+    }
+    saveState();
+    updateProgress();
+  }
+ 
+  // ── PROGRESS COUNTER ──
+  function updateProgress() {
+    let done = 0;
+    DAY_IDS.forEach(id => {
+      const chk = document.getElementById('chk-' + id);
+      if (chk && chk.checked) done++;
+    });
+    const total = DAY_IDS.length;
+    const pct = Math.round(done / total * 100);
+    document.getElementById('overallFill').style.width = pct + '%';
+    document.getElementById('doneCount').textContent = done;
+  }
+ 
+  // ── LOCALSTORAGE ──
+  function saveState() {
+    const state = {};
+    SECTION_IDS.forEach(id => {
+      const chk = document.getElementById('chk-' + id);
+      if (chk) state[id] = chk.checked;
+    });
+    try { localStorage.setItem('cpcs222_done', JSON.stringify(state)); } catch(e) {}
+  }
+ 
+  function loadState() {
+    try {
+      const raw = localStorage.getItem('cpcs222_done');
+      if (!raw) return;
+      const state = JSON.parse(raw);
+      SECTION_IDS.forEach(id => {
+        const chk = document.getElementById('chk-' + id);
+        if (chk && state[id]) {
+          chk.checked = true;
+          const section = document.getElementById('sec-' + id);
+          if (section) section.classList.add('is-done');
+        }
+      });
+    } catch(e) {}
+  }
+ 
+  // ── INIT ──
+  loadState();
+  updateProgress();
 </script>
 </body>
 </html>
